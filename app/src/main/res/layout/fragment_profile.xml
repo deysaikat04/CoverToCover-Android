@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/slide1"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/settings_profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/user" />
+
+            <EditText
+                android:id="@+id/settings_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_profile_image"
+                android:hint="Phone Number..."
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+            <EditText
+                android:id="@+id/settings_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_phone_number"
+                android:hint="Full Name..."
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+            <EditText
+                android:id="@+id/settings_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_full_name"
+                android:hint="Address..."
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+            <EditText
+                android:id="@+id/settings_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_address"
+                android:hint="Mail"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/settings_email_id"
+                android:id="@+id/gender"/>
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_below="@id/settings_email_id"
+                android:layout_toRightOf="@id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/brownLight"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:layout_below="@id/gender"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="85dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

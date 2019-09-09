@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!-- tools:showIn="@layout/app_bar_home_land" -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Home">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Select From the Categories"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:clipChildren="false">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    app:cardCornerRadius="2dp"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#a4e3da"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Business"
+                            android:id="@+id/business"
+                            android:onClick="callSubCategory"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    app:cardCornerRadius="2dp"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#fda88b">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Educational"
+                            android:onClick="callSubCategory"
+                            android:id="@+id/education"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    app:cardCornerRadius="2dp"
+                    
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#9ebef1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Adventure"
+                            android:onClick="callSubCategory"
+                            android:id="@+id/adventure"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#f69fd6"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Biography"
+                            android:onClick="callSubCategory"
+                            android:id="@+id/bio"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#8786fb"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="callSubCategory"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Fiction"
+                            android:id="@+id/fiction"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#f88c8c"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="callSubCategory"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Comics"
+                            android:id="@+id/comics"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#8cdbf9"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="callSubCategory"
+                            android:id="@+id/thriller"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Thriller"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#bca1f2"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Cookbook"
+                            android:onClick="callSubCategory"
+                            android:id="@+id/cookbooks"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#8cd5ca"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Literature"
+                            android:onClick="callSubCategory"
+                            android:id="@+id/literature"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#997fbc"
+                    app:cardCornerRadius="2dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="callSubCategory"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Children"
+                            android:id="@+id/children"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#a0d69a"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="callSubCategory"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Society"
+                            android:id="@+id/society"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    card_view:cardElevation="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="#ffbb94"
+                    app:cardCornerRadius="2dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:onClick="callSubCategory"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Travel"
+                            android:id="@+id/travel"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Grid 2x2 -->
+
+
+            <!-- Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/divider"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/app_rights"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

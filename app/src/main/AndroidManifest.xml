@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cover">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShopCategory"></activity>
+        <activity android:name=".BookFilter" />
+        <activity android:name=".MySearchActivity" />
+        <activity android:name=".PaymentDetails" />
+        <activity android:name=".MakePaymentActivity" />
+        <activity android:name=".Checkout" />
+        <activity android:name=".Order" />
+        <activity
+            android:name=".Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BookDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Category"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeLand"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LogIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

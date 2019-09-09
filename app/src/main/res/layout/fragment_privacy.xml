@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Privacy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy:"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note:"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_note"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.Collection of Personally Identifiable Information and other Information:"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Use of Demographic / Profile Data / Your Information"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cookies"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Sharing of personal information "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy5"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Links to Other Sites/Apps"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy6"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Security Precautions"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy7"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Choice/Opt-Out"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy8"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Advertisements on the Website "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy9"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Your Consent "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy10"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Grievance Officer "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy11"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

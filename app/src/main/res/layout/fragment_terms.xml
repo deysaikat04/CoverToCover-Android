@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Terms">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Use:"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please read our Terms of Use carefully before accessing or using coverTOcover App. By accessing or using our App, you acknowledge and agree to be legally bound by all of the terms of this agreement. The right to use this App is for you exclusively and cannot be transferred to any other person or entity."
+                android:layout_below="@+id/title1"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/title2"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use of App:"
+                android:layout_below="@+id/text1"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="coverTOcover App authorizes you to view this Site only for your personal, non-commercial use, provided that you retain all copyright and other proprietary notices contained in the original materials on in any copies of the materials. You may not modify the materials at this Site in any way. You may not reproduce, publicly display, perform, distribute, or otherwise use these materials for any public or commercial purpose. You may not use any of these materials on any other website or networked computer environment for any purpose. The materials at this Site are copyrighted and any unauthorized use of them may violate copyright, trademark, and/or other laws. If you breach any of these Terms, your authorization to use this Site automatically terminates and you must immediately destroy any downloaded or printed materials."
+                android:layout_below="@+id/title2"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/title3"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disclaimer of Warranty; Limitation of Liability:"
+                android:textStyle="bold"
+                android:layout_below="@+id/text2"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(A) You expressly agree that you use this Site at your own risk. The content at this Site is not promised or guaranteed to be correct, complete, or up-to-date. This site is provided on an “as is” and “as available” basis without express or implied warranties of any kind, including but not limited to: implied warranties of merchantability or fitness for a particular purpose, warranties of title, or warranties of non-infringement."
+                android:layout_below="@+id/title3"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/text31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:textSize="12dp"
+                android:text="(B) Neither this Site, its affiliates, nor any of their respective employees, agents, third-party content providers, or licensors warrant that this Site will be uninterrupted or error free; nor do they make any warranty as to the results that may be obtained from use of this Site, or as to the accuracy or reliability of any of the content provided on or through this Site."/>
+            <TextView
+                android:id="@+id/text32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text31"
+                android:textSize="12dp"
+                android:text="(C) This Site, its suppliers, any person or entity involved in creating, producing or distributing this site, or other third parties mentioned at this site, are not liable for any damages whatsoever. Such damages include, without limitation: any indirect, incidental, special, consequential or punitive damages; damages resulting from lost profits, lost data, or business interruption; or any other damage resulting from the use, inability to use, or the results of use of this Site, any websites linked to this Site, or the materials or information or services contained at any or all such sites, whether based on warranty, contract, tort or any other legal theory, and whether or not this Site has been advised of the possibility of such damages. If your use of the materials, information or services from this Site results in the need for services, repair, or correction of equipment or data, you assume all costs thereof. Applicable law may not allow the exclusion or limitation of incidental or consequential damages, so these limitations or exclusions may not apply to you."/>
+            <TextView
+                android:id="@+id/text33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text32"
+                android:textSize="12dp"
+                android:text="(D) This Site does not intend any references to entities, products or services in the content or any links on this Site to be endorsements of such entities, products or services."/>
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text33"
+                android:text="Links to Third-Party Websites:"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                android:layout_below="@+id/title4"
+                android:text="Links on this Site to third-party websites are provided solely as a convenience to you. If you use these links, you will leave this Site. The Site does not review all of these third-party sites and does not control and is not responsible for any of these sites or their content. Thus, the Site does not endorse or make any representations about them or any information, software or other products or materials found there, or any results obtained from using them. If you decide to access any of the third-party websites linked to this Site, you do this entirely at your own risk."/>
+            <TextView
+                android:id="@+id/title5"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text4"
+                android:text="Revisions to the Terms and Conditions"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                android:layout_below="@+id/title5"
+                android:text="The Site may revise these Terms at any time by updating this page. Please visit this page from time to time to review the most up-to-date Terms because they are binding on you. Certain provisions of these Terms may be superseded by expressly designated legal notices or terms posted on particular pages at this Site."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Ⓒ 2019 coverTOcover. All right reserved."
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/text5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
